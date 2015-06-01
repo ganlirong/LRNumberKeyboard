@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32D6AB6F1B1C72CF009F5780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6AB6E1B1C72CF009F5780 /* main.m */; };
+		32D6AB721B1C72CF009F5780 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6AB711B1C72CF009F5780 /* AppDelegate.m */; };
+		32D6AB751B1C72CF009F5780 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6AB741B1C72CF009F5780 /* ViewController.m */; };
+		32D6AB7A1B1C72CF009F5780 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D6AB791B1C72CF009F5780 /* Images.xcassets */; };
+		32D6AB7D1B1C72CF009F5780 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D6AB7B1B1C72CF009F5780 /* LaunchScreen.xib */; };
+		32D6AB891B1C72CF009F5780 /* LRNumberKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6AB881B1C72CF009F5780 /* LRNumberKeyboardTests.m */; };
+		32D6AB9D1B1C87BC009F5780 /* arrowInKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D6AB991B1C87BC009F5780 /* arrowInKeyboard.png */; };
+		32D6AB9E1B1C87BC009F5780 /* LRNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6AB9B1B1C87BC009F5780 /* LRNumberKeyboard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32D6AB831B1C72CF009F5780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32D6AB611B1C72CF009F5780 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D6AB681B1C72CF009F5780;
+			remoteInfo = LRNumberKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32D6AB691B1C72CF009F5780 /* LRNumberKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRNumberKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D6AB6D1B1C72CF009F5780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D6AB6E1B1C72CF009F5780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32D6AB701B1C72CF009F5780 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32D6AB711B1C72CF009F5780 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32D6AB731B1C72CF009F5780 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32D6AB741B1C72CF009F5780 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32D6AB791B1C72CF009F5780 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32D6AB7C1B1C72CF009F5780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32D6AB821B1C72CF009F5780 /* LRNumberKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRNumberKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D6AB871B1C72CF009F5780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D6AB881B1C72CF009F5780 /* LRNumberKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRNumberKeyboardTests.m; sourceTree = "<group>"; };
+		32D6AB991B1C87BC009F5780 /* arrowInKeyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowInKeyboard.png; sourceTree = "<group>"; };
+		32D6AB9A1B1C87BC009F5780 /* LRNumberKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNumberKeyboard.h; sourceTree = "<group>"; };
+		32D6AB9B1B1C87BC009F5780 /* LRNumberKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRNumberKeyboard.m; sourceTree = "<group>"; };
+		32D6AB9C1B1C87BC009F5780 /* LRNumberKeyboardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNumberKeyboardDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D6AB661B1C72CF009F5780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D6AB7F1B1C72CF009F5780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32D6AB601B1C72CF009F5780 = {
+			isa = PBXGroup;
+			children = (
+				32D6AB6B1B1C72CF009F5780 /* LRNumberKeyboard */,
+				32D6AB851B1C72CF009F5780 /* LRNumberKeyboardTests */,
+				32D6AB6A1B1C72CF009F5780 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32D6AB6A1B1C72CF009F5780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D6AB691B1C72CF009F5780 /* LRNumberKeyboard.app */,
+				32D6AB821B1C72CF009F5780 /* LRNumberKeyboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32D6AB6B1B1C72CF009F5780 /* LRNumberKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				32D6AB981B1C87BC009F5780 /* LRNumberKeyboard */,
+				32D6AB701B1C72CF009F5780 /* AppDelegate.h */,
+				32D6AB711B1C72CF009F5780 /* AppDelegate.m */,
+				32D6AB731B1C72CF009F5780 /* ViewController.h */,
+				32D6AB741B1C72CF009F5780 /* ViewController.m */,
+				32D6AB791B1C72CF009F5780 /* Images.xcassets */,
+				32D6AB7B1B1C72CF009F5780 /* LaunchScreen.xib */,
+				32D6AB6C1B1C72CF009F5780 /* Supporting Files */,
+			);
+			path = LRNumberKeyboard;
+			sourceTree = "<group>";
+		};
+		32D6AB6C1B1C72CF009F5780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32D6AB6D1B1C72CF009F5780 /* Info.plist */,
+				32D6AB6E1B1C72CF009F5780 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32D6AB851B1C72CF009F5780 /* LRNumberKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				32D6AB881B1C72CF009F5780 /* LRNumberKeyboardTests.m */,
+				32D6AB861B1C72CF009F5780 /* Supporting Files */,
+			);
+			path = LRNumberKeyboardTests;
+			sourceTree = "<group>";
+		};
+		32D6AB861B1C72CF009F5780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32D6AB871B1C72CF009F5780 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32D6AB981B1C87BC009F5780 /* LRNumberKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				32D6AB991B1C87BC009F5780 /* arrowInKeyboard.png */,
+				32D6AB9A1B1C87BC009F5780 /* LRNumberKeyboard.h */,
+				32D6AB9B1B1C87BC009F5780 /* LRNumberKeyboard.m */,
+				32D6AB9C1B1C87BC009F5780 /* LRNumberKeyboardDelegate.h */,
+			);
+			path = LRNumberKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32D6AB681B1C72CF009F5780 /* LRNumberKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D6AB8C1B1C72CF009F5780 /* Build configuration list for PBXNativeTarget "LRNumberKeyboard" */;
+			buildPhases = (
+				32D6AB651B1C72CF009F5780 /* Sources */,
+				32D6AB661B1C72CF009F5780 /* Frameworks */,
+				32D6AB671B1C72CF009F5780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LRNumberKeyboard;
+			productName = LRNumberKeyboard;
+			productReference = 32D6AB691B1C72CF009F5780 /* LRNumberKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32D6AB811B1C72CF009F5780 /* LRNumberKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D6AB8F1B1C72CF009F5780 /* Build configuration list for PBXNativeTarget "LRNumberKeyboardTests" */;
+			buildPhases = (
+				32D6AB7E1B1C72CF009F5780 /* Sources */,
+				32D6AB7F1B1C72CF009F5780 /* Frameworks */,
+				32D6AB801B1C72CF009F5780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D6AB841B1C72CF009F5780 /* PBXTargetDependency */,
+			);
+			name = LRNumberKeyboardTests;
+			productName = LRNumberKeyboardTests;
+			productReference = 32D6AB821B1C72CF009F5780 /* LRNumberKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32D6AB611B1C72CF009F5780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "甘立荣";
+				TargetAttributes = {
+					32D6AB681B1C72CF009F5780 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					32D6AB811B1C72CF009F5780 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 32D6AB681B1C72CF009F5780;
+					};
+				};
+			};
+			buildConfigurationList = 32D6AB641B1C72CF009F5780 /* Build configuration list for PBXProject "LRNumberKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32D6AB601B1C72CF009F5780;
+			productRefGroup = 32D6AB6A1B1C72CF009F5780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D6AB681B1C72CF009F5780 /* LRNumberKeyboard */,
+				32D6AB811B1C72CF009F5780 /* LRNumberKeyboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32D6AB671B1C72CF009F5780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D6AB7D1B1C72CF009F5780 /* LaunchScreen.xib in Resources */,
+				32D6AB7A1B1C72CF009F5780 /* Images.xcassets in Resources */,
+				32D6AB9D1B1C87BC009F5780 /* arrowInKeyboard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D6AB801B1C72CF009F5780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32D6AB651B1C72CF009F5780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D6AB751B1C72CF009F5780 /* ViewController.m in Sources */,
+				32D6AB721B1C72CF009F5780 /* AppDelegate.m in Sources */,
+				32D6AB6F1B1C72CF009F5780 /* main.m in Sources */,
+				32D6AB9E1B1C87BC009F5780 /* LRNumberKeyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D6AB7E1B1C72CF009F5780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D6AB891B1C72CF009F5780 /* LRNumberKeyboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32D6AB841B1C72CF009F5780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D6AB681B1C72CF009F5780 /* LRNumberKeyboard */;
+			targetProxy = 32D6AB831B1C72CF009F5780 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32D6AB7B1B1C72CF009F5780 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32D6AB7C1B1C72CF009F5780 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32D6AB8A1B1C72CF009F5780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32D6AB8B1B1C72CF009F5780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32D6AB8D1B1C72CF009F5780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LRNumberKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32D6AB8E1B1C72CF009F5780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LRNumberKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32D6AB901B1C72CF009F5780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LRNumberKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRNumberKeyboard.app/LRNumberKeyboard";
+			};
+			name = Debug;
+		};
+		32D6AB911B1C72CF009F5780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LRNumberKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRNumberKeyboard.app/LRNumberKeyboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32D6AB641B1C72CF009F5780 /* Build configuration list for PBXProject "LRNumberKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D6AB8A1B1C72CF009F5780 /* Debug */,
+				32D6AB8B1B1C72CF009F5780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D6AB8C1B1C72CF009F5780 /* Build configuration list for PBXNativeTarget "LRNumberKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D6AB8D1B1C72CF009F5780 /* Debug */,
+				32D6AB8E1B1C72CF009F5780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32D6AB8F1B1C72CF009F5780 /* Build configuration list for PBXNativeTarget "LRNumberKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D6AB901B1C72CF009F5780 /* Debug */,
+				32D6AB911B1C72CF009F5780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32D6AB611B1C72CF009F5780 /* Project object */;
+}
