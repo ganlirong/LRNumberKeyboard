@@ -39,14 +39,14 @@ static const CGFloat kKeyboardButtonHeight = 54;
         }
         
         UIColor *color = COLOR_RGB(188, 192, 199);
-        UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(105, 0, kLineWidth, kKeyboardHeight)];
-        line1.backgroundColor = color;
-        [self addSubview:line1];
-        
-        UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(214, 0, kLineWidth, kKeyboardHeight)];
-        line2.backgroundColor = color;
-        [self addSubview:line2];
-        
+//        UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(105, 0, kLineWidth, kKeyboardHeight)];
+//        line1.backgroundColor = color;
+//        [self addSubview:line1];
+//        
+//        UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(214, 0, kLineWidth, kKeyboardHeight)];
+//        line2.backgroundColor = color;
+//        [self addSubview:line2];
+//        
         for (int i = 0; i < 3; i++){
             
             UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, kKeyboardButtonHeight*(i + 1), ScreenWidth, kLineWidth)];
@@ -72,23 +72,24 @@ static const CGFloat kKeyboardButtonHeight = 54;
 {
     CGFloat frameX = 0;
     CGFloat frameW = 0;
+    CGFloat buttonWidth = ScreenWidth/3;
     
     switch (y){
         case 0:{
             frameX = 0.0;
-            frameW = 106.0;
+            frameW = buttonWidth;
         }
             break;
             
         case 1:{
-            frameX = 105.0;
-            frameW = 110.0;
+            frameX = buttonWidth + 1;
+            frameW = buttonWidth - 2;
         }
             break;
             
         case 2:{
-            frameX = 214.0;
-            frameW = 106.0;
+            frameX = buttonWidth*2;
+            frameW = buttonWidth;
         }
             break;
             
@@ -124,7 +125,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
     //创建0-9键盘数字
     if (number < 10){
         
-        UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, frameW, 28)];
+        UILabel *numberLabel = [[UILabel alloc] initWithFrame:button.bounds];
         numberLabel.text = [NSString stringWithFormat:@"%zd",number];
         numberLabel.textColor = [UIColor blackColor];
         numberLabel.textAlignment = NSTextAlignmentCenter;
@@ -133,7 +134,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
         
     } else if (number == 11){
         
-        UILabel *zerolabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, frameW, 28)];
+        UILabel *zerolabel = [[UILabel alloc] initWithFrame:button.bounds];
         zerolabel.text = @"0";
         zerolabel.textColor = [UIColor blackColor];
         zerolabel.textAlignment = NSTextAlignmentCenter;
@@ -142,7 +143,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
         
     }else if (number == 10){
         
-        UILabel *finishlabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, frameW, 28)];
+        UILabel *finishlabel = [[UILabel alloc] initWithFrame:button.bounds];
         finishlabel.text = @"完成";
         finishlabel.textColor = [UIColor blackColor];
         finishlabel.textAlignment = NSTextAlignmentCenter;
@@ -150,7 +151,8 @@ static const CGFloat kKeyboardButtonHeight = 54;
         
     } else {
         
-        UIImageView *arrow = [[UIImageView alloc] initWithFrame:CGRectMake(42, 19, 22, 17)];
+        UIImageView *arrow = [[UIImageView alloc] initWithFrame:button.bounds];
+        arrow.contentMode = UIViewContentModeCenter;
         arrow.image = [UIImage imageNamed:@"arrowInKeyboard.png"];
         [button addSubview:arrow];
         

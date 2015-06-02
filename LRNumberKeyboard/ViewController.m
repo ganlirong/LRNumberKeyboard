@@ -28,6 +28,7 @@
     keyboard.delegate = self;
     
     UITextField *textField = [[UITextField alloc] init];
+    textField.tag = 10009;
     textField.frame = CGRectMake(50, 100, ScreenWidth - 100, 30);
     textField.placeholder = @"custom keyboard";
     textField.inputView = keyboard;
@@ -37,6 +38,36 @@
     textField.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:textField];
 }
+
+/**
+ *  完成按钮
+ */
+-(void)numberKeyboardFinish{
+    UITextField *textField = (UITextField *)[self.view viewWithTag:10009];
+    [textField resignFirstResponder];
+}
+
+-(void)numberKeyboardDelete{
+    
+    UITextField *textField = (UITextField *)[self.view viewWithTag:10009];
+    
+    if ([textField isFirstResponder]) {
+        if (textField.text.length != 0) {
+            textField.text = [textField.text substringToIndex:textField.text.length -1];
+        }
+    }
+}
+
+-(void)numberKeyboardInput:(NSInteger)number{
+    
+    UITextField *textField = (UITextField *)[self.view viewWithTag:10009];
+    
+    if ([textField isFirstResponder]) {
+        textField.text = [textField.text stringByAppendingString:[NSString stringWithFormat:@"%zd",number]];
+    }
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
