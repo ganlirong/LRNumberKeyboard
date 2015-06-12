@@ -153,7 +153,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
         
         UIImageView *arrow = [[UIImageView alloc] initWithFrame:button.bounds];
         arrow.contentMode = UIViewContentModeCenter;
-        arrow.image = [UIImage imageNamed:@"arrowInKeyboard.png"];
+        arrow.image = [UIImage imageNamed:@"delete_bg.png"];
         [button addSubview:arrow];
         
     }

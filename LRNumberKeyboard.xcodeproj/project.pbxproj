@@ -13,7 +13,7 @@
 		32D6AB7A1B1C72CF009F5780 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D6AB791B1C72CF009F5780 /* Images.xcassets */; };
 		32D6AB7D1B1C72CF009F5780 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D6AB7B1B1C72CF009F5780 /* LaunchScreen.xib */; };
 		32D6AB891B1C72CF009F5780 /* LRNumberKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6AB881B1C72CF009F5780 /* LRNumberKeyboardTests.m */; };
-		32D6AB9D1B1C87BC009F5780 /* arrowInKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D6AB991B1C87BC009F5780 /* arrowInKeyboard.png */; };
+		32D6AB9D1B1C87BC009F5780 /* delete_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D6AB991B1C87BC009F5780 /* delete_bg@2x.png */; };
 		32D6AB9E1B1C87BC009F5780 /* LRNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6AB9B1B1C87BC009F5780 /* LRNumberKeyboard.m */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		32D6AB821B1C72CF009F5780 /* LRNumberKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRNumberKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D6AB871B1C72CF009F5780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D6AB881B1C72CF009F5780 /* LRNumberKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRNumberKeyboardTests.m; sourceTree = "<group>"; };
-		32D6AB991B1C87BC009F5780 /* arrowInKeyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowInKeyboard.png; sourceTree = "<group>"; };
+		32D6AB991B1C87BC009F5780 /* delete_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_bg@2x.png"; sourceTree = "<group>"; };
 		32D6AB9A1B1C87BC009F5780 /* LRNumberKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNumberKeyboard.h; sourceTree = "<group>"; };
 		32D6AB9B1B1C87BC009F5780 /* LRNumberKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRNumberKeyboard.m; sourceTree = "<group>"; };
 		32D6AB9C1B1C87BC009F5780 /* LRNumberKeyboardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRNumberKeyboardDelegate.h; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		32D6AB981B1C87BC009F5780 /* LRNumberKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				32D6AB991B1C87BC009F5780 /* arrowInKeyboard.png */,
+				32D6AB991B1C87BC009F5780 /* delete_bg@2x.png */,
 				32D6AB9A1B1C87BC009F5780 /* LRNumberKeyboard.h */,
 				32D6AB9B1B1C87BC009F5780 /* LRNumberKeyboard.m */,
 				32D6AB9C1B1C87BC009F5780 /* LRNumberKeyboardDelegate.h */,
@@ -216,7 +216,7 @@
 			files = (
 				32D6AB7D1B1C72CF009F5780 /* LaunchScreen.xib in Resources */,
 				32D6AB7A1B1C72CF009F5780 /* Images.xcassets in Resources */,
-				32D6AB9D1B1C87BC009F5780 /* arrowInKeyboard.png in Resources */,
+				32D6AB9D1B1C87BC009F5780 /* delete_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +424,7 @@
 				32D6AB8E1B1C72CF009F5780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32D6AB8F1B1C72CF009F5780 /* Build configuration list for PBXNativeTarget "LRNumberKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +433,7 @@
 				32D6AB911B1C72CF009F5780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
