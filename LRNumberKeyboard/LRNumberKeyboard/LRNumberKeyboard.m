@@ -8,15 +8,15 @@
 
 #import "LRNumberKeyboard.h"
 
-#define kLineWidth 1
-#define kNumberFont [UIFont systemFontOfSize:28]
-#define COLOR_RGB(R, G, B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
+#define kLRNKLineWidth 1
+#define kLRNKNumberFont [UIFont systemFontOfSize:28]
+#define kLRNKCOLOR_RGB(R, G, B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
 
 //定义设备屏幕的高度
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kLRNKScreenHeight [UIScreen mainScreen].bounds.size.height
 
 //定义设备屏幕的宽度
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kLRNKScreenWidth [UIScreen mainScreen].bounds.size.width
 
 static const NSUInteger kFinishButtonTag = 10;
 static const NSUInteger kZeroButtonTag = 11;
@@ -29,7 +29,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
 - (id)init {
     self = [super init];
     if (self) {
-        self.bounds = CGRectMake(0, 0, ScreenWidth, kKeyboardHeight);
+        self.bounds = CGRectMake(0, 0, kLRNKScreenWidth, kKeyboardHeight);
         for (int i = 0; i < 4; i++){
             for (int j = 0; j < 3; j++){
                 UIButton *button = [self creatButtonWithX:i Y:j];
@@ -38,7 +38,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
             
         }
         
-        UIColor *color = COLOR_RGB(188, 192, 199);
+        UIColor *color = kLRNKCOLOR_RGB(188, 192, 199);
 //        UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(105, 0, kLineWidth, kKeyboardHeight)];
 //        line1.backgroundColor = color;
 //        [self addSubview:line1];
@@ -49,7 +49,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
 //        
         for (int i = 0; i < 3; i++){
             
-            UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, kKeyboardButtonHeight*(i + 1), ScreenWidth, kLineWidth)];
+            UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, kKeyboardButtonHeight*(i + 1), kLRNKScreenWidth, kLRNKLineWidth)];
             line.backgroundColor = color;
             [self addSubview:line];
             
@@ -72,7 +72,7 @@ static const CGFloat kKeyboardButtonHeight = 54;
 {
     CGFloat frameX = 0;
     CGFloat frameW = 0;
-    CGFloat buttonWidth = ScreenWidth/3;
+    CGFloat buttonWidth = kLRNKScreenWidth/3;
     
     switch (y){
         case 0:{
@@ -105,8 +105,8 @@ static const CGFloat kKeyboardButtonHeight = 54;
                action:@selector(clickButton:)
      forControlEvents:UIControlEventTouchUpInside];
     
-    UIColor *colorNormal = COLOR_RGB(252, 252, 252);
-    UIColor *colorHightlighted = COLOR_RGB(186, 189, 194);
+    UIColor *colorNormal = kLRNKCOLOR_RGB(252, 252, 252);
+    UIColor *colorHightlighted = kLRNKCOLOR_RGB(186, 189, 194);
     if (number == 10 || number == 12){
         UIColor *colorTemp = colorNormal;
         colorNormal = colorHightlighted;
@@ -123,39 +123,31 @@ static const CGFloat kKeyboardButtonHeight = 54;
     [button setImage:pressedColorImg forState:UIControlStateHighlighted];
     
     //创建0-9键盘数字
-    if (number < 10){
-        
+    if (number < 10) {
         UILabel *numberLabel = [[UILabel alloc] initWithFrame:button.bounds];
         numberLabel.text = [NSString stringWithFormat:@"%zd",number];
         numberLabel.textColor = [UIColor blackColor];
         numberLabel.textAlignment = NSTextAlignmentCenter;
-        numberLabel.font = kNumberFont;
+        numberLabel.font = kLRNKNumberFont;
         [button addSubview:numberLabel];
-        
-    } else if (number == 11){
-        
+    } else if (number == 11) {
         UILabel *zerolabel = [[UILabel alloc] initWithFrame:button.bounds];
         zerolabel.text = @"0";
         zerolabel.textColor = [UIColor blackColor];
         zerolabel.textAlignment = NSTextAlignmentCenter;
-        zerolabel.font = kNumberFont;
+        zerolabel.font = kLRNKNumberFont;
         [button addSubview:zerolabel];
-        
-    }else if (number == 10){
-        
+    } else if (number == 10) {
         UILabel *finishlabel = [[UILabel alloc] initWithFrame:button.bounds];
         finishlabel.text = @"完成";
         finishlabel.textColor = [UIColor blackColor];
         finishlabel.textAlignment = NSTextAlignmentCenter;
         [button addSubview:finishlabel];
-        
     } else {
-        
         UIImageView *arrow = [[UIImageView alloc] initWithFrame:button.bounds];
         arrow.contentMode = UIViewContentModeCenter;
         arrow.image = [UIImage imageNamed:@"delete_bg.png"];
         [button addSubview:arrow];
-        
     }
     
     return button;
